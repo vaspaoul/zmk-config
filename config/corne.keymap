@@ -20,7 +20,7 @@
             //                    | GUI | LWR | SPC |   | BKSP| RSE  | RET |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E  &kp R      &kp T               &kp Y          &kp U          &kp I      &kp O    &kp P     &kp SQT
+&kp TAB     &kp Q  &kp W  &kp E  &kp R      &kp T               &kp Y          &kp U          &kp I      &kp O    &kp P     &kp MINUS
 &kp LCTRL   &kp A  &kp S  &kp D  &kp F      &kp G               &kp H          &kp J          &kp K      &kp L    &kp SEMI  &kp ENTER
 &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V      &kp B               &kp N          &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                           &mo 1  &kp SPACE  &kp LEFT_COMMAND    &kp RIGHT_ALT  &kp BACKSPACE  &mo 2
@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6      &kp N7           &kp N8             &kp N9     &kp N0  &kp MINUS
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT    &kp DOWN         &kp UP             &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans      &trans           &trans             &trans     &trans  &trans
-                                        &trans        &trans        &trans          &kp C_PLAY  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN
+&kp ESC     &kp N1        &kp N2        &kp N3        &kp N4                &kp N5                      &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp MINUS
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none   &kp SQT
+&kp LSHFT   &trans        &trans        &trans        &trans                &trans                      &trans    &trans    &trans  &trans     &trans  &trans
+                                        &trans        &kp LG(LS(NUMBER_4))  &kp LS(LC(LG(NUMBER_4)))    &trans    &trans    &trans
             >;
         };
 
@@ -50,10 +50,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &trans    &trans    &trans       &trans     &trans     &trans
+&kp ESCAPE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET          &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp MINUS
+&kp LCTRL   &trans    &trans  &trans    &trans    &trans       &kp C_VOLUME_UP    &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT   &trans    &trans  &trans    &trans    &trans       &kp C_VOLUME_DOWN  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                              &trans    &trans    &trans       &kp C_PLAY_PAUSE   &trans     &trans
             >;
         };
     };
